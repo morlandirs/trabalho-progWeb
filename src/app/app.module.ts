@@ -8,6 +8,9 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { PaginaInicialComponent } from './componentes/pagina-inicial/pagina-inicial.component';
 import { VisualizarTarefasComponent } from './componentes/visualizar-tarefas/visualizar-tarefas.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProdutosComponent } from './componentes/produtos/produtos.component';
+import { CarrinhoComponent } from './componentes/carrinho/carrinho.component';
+import { ListaDesejosComponent } from './componentes/lista-desejos/lista-desejos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     CabecalhoComponent,
     RodapeComponent,
     PaginaInicialComponent,
-    VisualizarTarefasComponent
+    VisualizarTarefasComponent,
+    ProdutosComponent,
+    CarrinhoComponent,
+    ListaDesejosComponent
   ],
   imports: [
     BrowserModule,
