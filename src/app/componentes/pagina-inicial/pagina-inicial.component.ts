@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaInicialComponent implements OnInit {
 
-  constructor() { }
+  addToCart(product: string): void {
+    console.log(`${product} added to cart`);
+    // Implement logic to add to cart service or state
+  }
+
+  addToWishlist(product: string): void {
+    console.log(`${product} added to wishlist`);
+    // Implement logic to add to wishlist service or state
+  }
 
   ngOnInit(): void {
   }

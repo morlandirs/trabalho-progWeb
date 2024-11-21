@@ -1,9 +1,44 @@
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <h1 class="text-center mb-4">
-        Página Inicial
-      </h1>
+<div class="col-md-6 offset-md-3">
+  <h1 class="text-center mb-4 mt-4">
+    Novos produtos
+  </h1>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/imagem/product01.png" class="card-img-top" alt="Macbook">
+          <div class="card-body text-center">
+            <h5 class="card-title">Macbook</h5>
+            <p class="card-text">R$ 5000,00</p>
+            <button class="btn btn-primary" (click)="addToCart('Macbook')">Add to Cart</button>
+            <button class="btn btn-outline-secondary mt-2" (click)="addToWishlist('Macbook')">Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/imagem/product02.png" class="card-img-top" alt="Fones de Ouvido">
+          <div class="card-body text-center">
+            <h5 class="card-title">Fone de Ouvido</h5>
+            <p class="card-text">R$ 500,00</p>
+            <button class="btn btn-primary" (click)="addToCart('Fone de Ouvido')">Add to Cart</button>
+            <button class="btn btn-outline-secondary mt-2" (click)="addToWishlist('Fone de Ouvido')">Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/imagem/product03.png" class="card-img-top" alt="Notebook">
+          <div class="card-body text-center">
+            <h5 class="card-title">Notebook</h5>
+            <p class="card-text">R$ 2000,00</p>
+            <button class="btn btn-primary" (click)="addToCart('Notebook')">Add to Cart</button>
+            <button class="btn btn-outline-secondary mt-2" (click)="addToWishlist('Notebook')">Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
