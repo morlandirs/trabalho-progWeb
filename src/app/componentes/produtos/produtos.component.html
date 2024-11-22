@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row">
     <!-- Product 1 -->
-    <div class="col-md-4" *ngFor="let product of products [{ name: 'Macbook' }, { name: 'Fone de Ouvido' }, { name: 'Notebook' }]">
+    <div class="col-md-4" *ngFor="let product of products">
       <div class="card">
         <img [src]="product.image" class="card-img-top" [alt]="product.name">
         <div class="card-body text-center">
@@ -16,5 +16,5 @@
 
   <!-- Cart and Wishlist Components -->
   <app-carrinho [cartItems]="cart"></app-carrinho>
-  <app-lista-de-desejos [wishlistItems]="wishlist"></app-lista-de-desejos>
+  <app-lista-desejos [wishlistItems]="wishlist"></app-lista-desejos>
 </div>

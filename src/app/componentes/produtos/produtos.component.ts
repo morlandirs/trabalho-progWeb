@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Produtos} from "../../app-core/model/produto";
 
 @Component({
   selector: 'app-produtos',
@@ -15,21 +16,21 @@ export class ProdutosComponent {
   cart: string[] = [];
   wishlist: string[] = [];
 
-  addToCart(product: string): void {
-    if (!this.cart.find(item => item.name === product.name)) {
-      this.cart.push(product);
-      alert(`${product.name} has been added to your cart.`);
+  addToCart(product: Produtos): void {
+    if (!this.cart.find(item => item === product.name)) {
+      this.cart.push(product.name);
+      alert(`${product} has been added to your cart.`);
     } else {
-      alert(`${product.name} is already in your cart.`);
+      alert(`${product} is already in your cart.`);
     }
   }
 
-  addToWishlist(product: string): void {
-    if (!this.wishlist.find(item => item.name === product.name)) {
-      this.wishlist.push(product);
-      alert(`${product.name} has been added to your wishlist.`);
+  addToWishlist(product: Produtos): void {
+    if (!this.wishlist.find(item => item === product.name)) {
+      this.wishlist.push(product.name);
+      alert(`${product} has been added to your wishlist.`);
     } else {
-      alert(`${product.name} is already in your wishlist.`);
+      alert(`${product} is already in your wishlist.`);
     }
   }
 }
