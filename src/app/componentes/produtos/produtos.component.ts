@@ -8,9 +8,9 @@ import {Produtos} from "../../app-core/model/produto";
 })
 export class ProdutosComponent {
   products = [
-    { name: 'Macbook', price: 5000, image: 'assets/imagem/product01.png' },
+    { name: 'Notebook', price: 1000, image: 'assets/imagem/product08.png' },
     { name: 'Fone de Ouvido', price: 500, image: 'assets/imagem/product02.png' },
-    { name: 'Notebook', price: 2000, image: 'assets/imagem/product03.png' }
+    { name: 'Macbook', price: 5000, image: 'assets/imagem/product03.png' }
   ];
 
   cart: string[] = [];

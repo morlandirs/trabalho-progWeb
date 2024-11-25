@@ -1,1 +1,24 @@
-<p>lista-desejos works!</p>
+<main class="col-md-6 offset-md-3">
+  <h1 class="text-center mb-4 mt-4">
+    Sua Lista de Desejos
+  </h1>
+  <section class="wishlist-items">
+    <div class="card mb-3">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-2">
+          <img src="assets/imagem/product03.png" class="img-fluid rounded-start" alt="Item Name">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Macbook</h5>
+            <p class="card-text">Preço: R$ 5000.00</p>
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <button class="btn btn-primary mb-2" (click)="addToCart('Macbook')">Add Carrinho</button>
+          <button class="btn btn-danger">Remover</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
