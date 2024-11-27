@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Produtos} from "../../app-core/model/produto";
+import {ProdutoService} from "../../app-core/servicos/produto-service.service";
 
 @Component({
   selector: 'app-produtos',
@@ -13,24 +14,15 @@ export class ProdutosComponent {
     { name: 'Macbook', price: 5000, image: 'assets/imagem/product03.png' }
   ];
 
-  cart: string[] = [];
-  wishlist: string[] = [];
+  constructor(private produtoService: ProdutoService) {}
 
   addToCart(product: Produtos): void {
-    if (!this.cart.find(item => item === product.name)) {
-      this.cart.push(product.name);
-      alert(`${product} has been added to your cart.`);
-    } else {
-      alert(`${product} is already in your cart.`);
-    }
+    const message = this.produtoService.addToCart(product);
+    alert(message);
   }
 
   addToWishlist(product: Produtos): void {
-    if (!this.wishlist.find(item => item === product.name)) {
-      this.wishlist.push(product.name);
-      alert(`${product} has been added to your wishlist.`);
-    } else {
-      alert(`${product} is already in your wishlist.`);
-    }
+    const message = this.produtoService.addToWishlist(product);
+    alert(message);
   }
 }
