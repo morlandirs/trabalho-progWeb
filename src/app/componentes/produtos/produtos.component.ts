@@ -13,6 +13,8 @@ export class ProdutosComponent {
     { name: 'Fone de Ouvido', price: 500, image: 'assets/imagem/product02.png' },
     { name: 'Macbook', price: 5000, image: 'assets/imagem/product03.png' }
   ];
+  cart: string[] = [];
+  wishlist: string[] = [];
 
   constructor(private produtoService: ProdutoService) {}
 
